@@ -50,6 +50,7 @@ def load_data():
 df = load_data()
 
 def show_explore_page():
+    st.image('./img/header.png')
     st.title("Explore Software Dev Salaries")
 
     st.write(
@@ -65,8 +66,11 @@ def show_explore_page():
     ax1.pie(data, labels=data.index, autopct="%1.1f%%", shadow=True, startangle=90)
     ax1.axis("equal")
 
-    st.write(""" #### Number of data from different countries """)
 
+    st.write(""" #### The data from different countries """)
+    st.dataframe(data)
+
+    st.write(""" #### Pie chart of data from different countries """)
     st.pyplot(fig1)
 
     st.write(
