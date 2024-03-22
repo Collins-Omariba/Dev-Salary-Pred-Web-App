@@ -18,6 +18,6 @@ streamlit run app.py
 ```
 
 ## DEPLOY
-
+[currently offline]
 https://collins-omariba-dev-salary-pred-web-app-app-zi64hm.streamlit.app/
 
